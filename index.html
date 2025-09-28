@@ -1,81 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Carefluence Network</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/booking.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CareFluenceNetwork - Book Your Appointment</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/booking.css">
+  <script defer src="js/main.js"></script>
 </head>
 <body>
-  <!-- HERO -->
+  <!-- Header -->
   <header class="hero">
     <div class="hero-content">
       <h1>Better Care Starts Here</h1>
-      <p>Find trusted doctors & book appointments instantly—anytime, anywhere.</p>
-      <button class="btn-primary" id="openBooking">Book Free Consultation</button>
+      <p>Connecting you with the best doctors in Bangalore for every health need.</p>
+      <a href="#booking" class="btn-primary">Book Appointment</a>
     </div>
   </header>
 
-  <!-- DISEASE SLIDER -->
-  <section class="disease-section">
-    <h2>Select Your Concern</h2>
-    <div class="disease-slider">
-      <div class="disease-card">Cardiology</div>
-      <div class="disease-card">Dermatology</div>
-      <div class="disease-card">Orthopedics</div>
-      <div class="disease-card">ENT</div>
-      <div class="disease-card">Neurology</div>
-      <div class="disease-card">Diabetology</div>
-      <div class="disease-card">General Medicine</div>
-      <div class="disease-card">Pediatrics</div>
-      <div class="disease-card">Gastroenterology</div>
-      <div class="disease-card">Psychiatry</div>
+  <!-- About Us -->
+  <section class="about-us">
+    <h2>About CareFluence</h2>
+    <p>We are a Bangalore-based team of 4 young co-founders passionate about helping doctors become influential figures while ensuring patients get the best care. Our 10 expert doctors are ready to assist you with personalized consultations.</p>
+  </section>
+
+  <!-- Slogan Section -->
+  <section class="slogan">
+    <h2>"Your Health, Our Priority!"</h2>
+    <p>Connecting patients with trusted, influential doctors for every medical condition.</p>
+  </section>
+
+  <!-- Our Doctors -->
+  <section class="doctors">
+    <h2>Meet Our Doctors</h2>
+    <div class="doctor-cards">
+      <!-- Doctor Card Template -->
+      <div class="doctor-card">
+        <img src="images/doctors/doctor1.jpg" alt="Doctor 1">
+        <h3>Dr. Anjali Mehta</h3>
+        <p>Specialty: Cardiology</p>
+        <p>Expert in heart care with over 15 years of experience. Known for patient-focused consultations.</p>
+      </div>
+      <!-- Repeat for 10 doctors -->
+      <div class="doctor-card">
+        <img src="images/doctors/doctor2.jpg" alt="Doctor 2">
+        <h3>Dr. Rohit Sharma</h3>
+        <p>Specialty: Neurology</p>
+        <p>Renowned neurologist helping patients overcome complex brain and nerve issues.</p>
+      </div>
+      <!-- ... Add 8 more doctors similarly ... -->
     </div>
   </section>
 
-  <!-- FLOATING ICON -->
-  <button class="floating-btn" id="floatBooking">
-    <i class="fas fa-calendar-check"></i>
-  </button>
+  <!-- Booking Form -->
+  <section id="booking" class="booking">
+    <h2>Book Your Appointment</h2>
+    <form id="appointmentForm">
+      <label for="name">Your Name*</label>
+      <input type="text" id="name" name="name" required>
 
-  <!-- BOOKING MODAL -->
-  <div class="modal" id="bookingModal">
-    <div class="modal-content">
-      <span class="close" id="closeModal">&times;</span>
-      <h3>Book Your Appointment</h3>
-      <form id="bookingForm">
-        <input type="text" name="name" placeholder="Full Name" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <input type="tel" name="phone" placeholder="Phone Number" required>
-        <input type="text" name="disease" id="diseaseField" placeholder="Health Concern" required>
-        
-        <!-- Doctor dropdown placeholder -->
-        <select id="doctorField" name="doctor" required style="display:none;">
-          <option value="">Select Doctor</option>
-        </select>
+      <label for="email">Email*</label>
+      <input type="email" id="email" name="email" required>
 
-        <input type="date" name="date" required>
-        <input type="time" name="time" required>
-        <textarea name="note" placeholder="Additional Notes"></textarea>
-        <button type="submit" class="btn-primary">Submit</button>
-      </form>
+      <label for="phone">Phone*</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="disease">Medical Condition / Disease*</label>
+      <input type="text" id="disease" name="disease" required>
+
+      <label for="doctor">Select Doctor*</label>
+      <select id="doctor" name="doctor" required>
+        <option value="">-- Select Doctor --</option>
+        <option value="Dr. Anjali Mehta">Dr. Anjali Mehta - Cardiology</option>
+        <option value="Dr. Rohit Sharma">Dr. Rohit Sharma - Neurology</option>
+        <!-- Add remaining doctors -->
+      </select>
+
+      <label for="message">Additional Details</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <button type="submit" class="btn-primary">Submit</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 CareFluenceNetwork. Made with ❤️ in Bangalore by a team of 4 young co-founders.</p>
+  </footer>
+
+  <!-- Pop-up -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span id="closePopup" class="close">&times;</span>
+      <h3>Thank you!</h3>
+      <p>We will reach out to you shortly to confirm your appointment.</p>
     </div>
   </div>
-
-  <!-- SUCCESS POPUP -->
-  <div class="thankyou" id="thankYou">
-    <div class="thankyou-box">
-      <h3>Thanks for your valued time!</h3>
-      <p>Our customer executive will reach you shortly.</p>
-      <button id="closeThanks">Close</button>
-    </div>
-  </div>
-
-  <script src="js/main.js"></script>
 </body>
 </html>
+
