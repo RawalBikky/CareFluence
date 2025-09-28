@@ -1,13 +1,15 @@
-const ctx = document.getElementById('bookingChart').getContext('2d');
-new Chart(ctx, {
+const ctx = document.getElementById('appointmentsChart').getContext('2d');
+const appointmentsChart = new Chart(ctx, {
   type: 'bar',
   data: {
-    labels: ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'],
+    labels: ['Dr. Anjali', 'Dr. Rohit', 'Dr. Sita', 'Dr. Raj', 'Dr. Maya'],
     datasets: [{
-      label: 'Bookings',
-      data: [12,19,3,5,2,3,7],
-      backgroundColor: '#0d6efd'
+      label: 'Appointments',
+      data: [12, 19, 8, 15, 10],
+      backgroundColor: 'rgba(108, 99, 255, 0.6)',
+      borderColor: 'rgba(108, 99, 255, 1)',
+      borderWidth: 1
     }]
   },
-  options: { responsive:true, scales:{ y:{ beginAtZero:true } } }
+  options: { scales: { y: { beginAtZero: true } } }
 });
