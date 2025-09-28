@@ -1,27 +1,19 @@
-.modal {
-  display: none; position: fixed; z-index: 10;
-  left: 0; top: 0; width: 100%; height: 100%;
-  background: rgba(0,0,0,0.6); justify-content: center; align-items: center;
+#booking form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
 }
-.modal-content {
-  background: #fff; padding: 30px; border-radius: var(--radius);
-  width: 90%; max-width: 400px;
+#booking label { margin: 10px 0 5px; font-weight: bold; }
+#booking input, #booking textarea, #booking select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
 }
-.modal-content input,
-.modal-content textarea {
-  width: 100%; margin: 10px 0; padding: 10px;
-  border: 1px solid #ccc; border-radius: var(--radius);
-}
-.close {
-  float: right; font-size: 24px; cursor: pointer; color: #999;
-}
+#booking button { margin-top: 10px; }
 
-.thankyou {
-  display: none; position: fixed; top:0; left:0;
-  width:100%; height:100%; background: rgba(0,0,0,0.6);
-  justify-content:center; align-items:center;
-}
-.thankyou-box {
-  background:#fff; padding:30px; border-radius: var(--radius);
-  text-align:center;
-}
