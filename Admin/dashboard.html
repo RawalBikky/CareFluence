@@ -3,58 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin Dashboard - Carefluence</title>
+  <title>Admin Dashboard - CareFluence</title>
   <link rel="stylesheet" href="../css/admin.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script defer src="../js/charts.js"></script>
 </head>
 <body>
-  <header class="admin-header">
+  <header>
     <h1>Admin Dashboard</h1>
   </header>
-
-  <main class="admin-main">
-    <!-- Stats Section -->
-    <section class="stats">
-      <div class="stat-box">
-        <h3 id="custCount">120</h3>
-        <p>Total Customers</p>
-      </div>
-      <div class="stat-box">
-        <h3 id="docCount">10</h3>
-        <p>Total Doctors</p>
-      </div>
-      <div class="stat-box">
-        <h3 id="diseaseCount">25</h3>
-        <p>Disease Types</p>
-      </div>
+  <main>
+    <section class="analytics">
+      <h2>Appointments Analytics</h2>
+      <canvas id="appointmentsChart"></canvas>
     </section>
-
-    <!-- Chart Section -->
-    <section class="chart-area">
-      <canvas id="bookingChart"></canvas>
-    </section>
-
-    <!-- Doctor Management -->
-    <section class="doctor-list">
-      <h2>Doctors</h2>
-
-      <!-- Optional Add Doctor Form -->
-      <form id="addDoctorForm" class="add-doctor-form">
-        <input type="text" id="docName" placeholder="Doctor Name" required>
-        <input type="text" id="docSpecialty" placeholder="Specialty" required>
-        <input type="text" id="docLicense" placeholder="License No." required>
-        <input type="text" id="docImg" placeholder="Image URL (../images/doctors/xx.jpg)" required>
-        <button type="submit">Add Doctor</button>
-      </form>
-
-      <div id="doctorCards" class="doctor-cards">
-        <!-- Doctor cards will be injected here by admin.js -->
-      </div>
+    <section class="recent-bookings">
+      <h2>Recent Bookings</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Doctor</th>
+            <th>Disease</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dynamically populate with JS -->
+        </tbody>
+      </table>
     </section>
   </main>
-
-  <!-- Scripts -->
-  <script src="../js/charts.js"></script>
-  <script src="admin.js"></script>
 </body>
 </html>
+
