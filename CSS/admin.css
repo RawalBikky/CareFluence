@@ -1,0 +1,6 @@
+body { font-family: 'Poppins', sans-serif; background: #f4f4f4; color: #333; }
+header { background: #6C63FF; color: #fff; padding: 20px; text-align: center; }
+main { max-width: 1200px; margin: 20px auto; }
+.analytics, .recent-bookings { background: #fff; padding: 20px; border-radius: 12px; margin-bottom: 20px; }
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 12px; border-bottom: 1px solid #ccc; text-align: left; }
