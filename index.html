@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carefluence Network</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/booking.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Better Care Starts Here</h1>
+      <p>Find trusted doctors & book appointments instantly—anytime, anywhere.</p>
+      <button class="btn-primary" id="openBooking">Book Free Consultation</button>
+    </div>
+  </header>
+
+  <!-- DISEASE SLIDER -->
+  <section class="disease-section">
+    <h2>Select Your Concern</h2>
+    <div class="disease-slider">
+      <div class="disease-card">Cardiology</div>
+      <div class="disease-card">Dermatology</div>
+      <div class="disease-card">Orthopedics</div>
+      <div class="disease-card">ENT</div>
+      <div class="disease-card">Neurology</div>
+      <div class="disease-card">Diabetology</div>
+      <div class="disease-card">General Medicine</div>
+      <div class="disease-card">Pediatrics</div>
+      <div class="disease-card">Gastroenterology</div>
+      <div class="disease-card">Psychiatry</div>
+    </div>
+  </section>
+
+  <!-- FLOATING ICON -->
+  <button class="floating-btn" id="floatBooking">
+    <i class="fas fa-calendar-check"></i>
+  </button>
+
+  <!-- BOOKING MODAL -->
+  <div class="modal" id="bookingModal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h3>Book Your Appointment</h3>
+      <form id="bookingForm">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <input type="text" name="disease" id="diseaseField" placeholder="Health Concern" required>
+        
+        <!-- Doctor dropdown placeholder -->
+        <select id="doctorField" name="doctor" required style="display:none;">
+          <option value="">Select Doctor</option>
+        </select>
+
+        <input type="date" name="date" required>
+        <input type="time" name="time" required>
+        <textarea name="note" placeholder="Additional Notes"></textarea>
+        <button type="submit" class="btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- SUCCESS POPUP -->
+  <div class="thankyou" id="thankYou">
+    <div class="thankyou-box">
+      <h3>Thanks for your valued time!</h3>
+      <p>Our customer executive will reach you shortly.</p>
+      <button id="closeThanks">Close</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
