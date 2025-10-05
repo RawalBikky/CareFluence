@@ -5,6 +5,81 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Our Influencers | CareFluence</title>
   <link rel="stylesheet" href="CSS/style.css" />
+  <!-- Google Fonts for stylish look -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Influencers Section */
+    .influencers-section {
+      text-align: center;
+      padding: 80px 10%;
+      background: #f8faff;
+    }
+
+    .influencers-section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      color: #0077ff;
+      margin-bottom: 50px;
+      font-weight: 600;
+    }
+
+    .influencers {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 25px 20px;
+      border-radius: 15px;
+      width: 260px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 50%;
+      height: 220px;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      font-size: 1.3rem;
+      color: #0077ff;
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .card .description {
+      font-size: 0.9rem;
+      color: #777;
+      font-style: italic;
+      line-height: 1.4;
+    }
+
+    @media (max-width: 768px) {
+      .influencers {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
 </head>
 <body>
   <nav class="navbar">
@@ -26,19 +101,38 @@
         <img src="images/doctor1.png" alt="Dr. Akshay">
         <h3>Dr. Akshay</h3>
         <p>Wellness Specialist</p>
+        <div class="description">
+          Focused on holistic health, Dr. Akshay guides patients towards overall wellness and lifestyle improvements.
+        </div>
       </div>
+
       <div class="card">
         <img src="images/doctor2.png" alt="Dr. Deepak">
         <h3>Dr. Deepak</h3>
         <p>Nutrition Expert</p>
+        <div class="description">
+          Dr. Deepak specializes in personalized nutrition plans to help patients achieve optimal health.
+        </div>
       </div>
+
       <div class="card">
         <img src="images/doctor3.png" alt="Dr. Neha">
         <h3>Dr. Neha</h3>
         <p>Mental Health Coach</p>
+        <div class="description">
+          Expert in mental well-being, Dr. Neha provides strategies for stress management and emotional balance.
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/doctor4.png" alt="Dr. Meera">
+        <h3>Dr. Meera</h3>
+        <p>Dermatologist</p>
+        <div class="description">
+          Dr. Meera combines clinical expertise with modern skincare solutions for healthy and radiant skin.
+        </div>
       </div>
     </div>
   </section>
 </body>
 </html>
-
