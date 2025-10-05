@@ -730,7 +730,7 @@ footer {
   text-decoration: none;
   color: #fff;
   font-weight: 500;
-  font-size: 2rem; /* larger text */
+  font-size: 1.7rem; /* larger text */
   display: flex;
   align-items: center;
   gap: 8px; /* space between icon and text */
