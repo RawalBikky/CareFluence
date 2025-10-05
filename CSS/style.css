@@ -348,6 +348,18 @@ body {
 .social-icons img:hover {
   transform: scale(1.2);
 }
+.contact-info {
+  margin-bottom: 30px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  margin-top: 40px;
+}
 
 /* ---------------------- */
 /* PARTNER LOGOS */
