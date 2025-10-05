@@ -730,7 +730,7 @@ footer {
   text-decoration: none;
   color: #fff;
   font-weight: 500;
-  font-size: 1.5rem; /* larger text */
+  font-size: 2rem; /* larger text */
   display: flex;
   align-items: center;
   gap: 8px; /* space between icon and text */
@@ -738,7 +738,7 @@ footer {
 }
 
 .nav-links li a i {
-  font-size: 1.5rem; /* bigger icons */
+  font-size: 2rem; /* bigger icons */
 }
 
 /* Hover & Active State */
