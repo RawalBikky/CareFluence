@@ -322,3 +322,251 @@ footer {
     flex-direction: column;
   }
 }
+
+/* General Reset Index home page css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f8faff;
+  color: #1a1a1a;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #ffffffcc;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 6%;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #0077ff;
+}
+
+.logo span {
+  color: #0abf53;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #0077ff;
+  border-bottom: 2px solid #0077ff;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #0077ff;
+  margin: 4px 0;
+  transition: all 0.3s;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: linear-gradient(to right, #0077ffcc, #0abf53cc), 
+              url('../images/clinic-bg.jpg') center/cover no-repeat;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.btn-primary {
+  background: #ffffff;
+  color: #0077ff;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #0abf53;
+  color: white;
+}
+
+/* About Preview */
+.about-preview {
+  padding: 80px 10%;
+  text-align: center;
+  background: #f0f6ff;
+}
+
+.about-preview h2 {
+  color: #0077ff;
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+.about-preview p {
+  font-size: 1rem;
+  margin-bottom: 25px;
+  color: #333;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-secondary {
+  text-decoration: none;
+  padding: 8px 20px;
+  background: #0077ff;
+  color: white;
+  border-radius: 25px;
+  transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+  background: #0abf53;
+}
+
+/* Doctors Preview */
+.doctors-preview {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.doctors-preview h2 {
+  font-size: 2rem;
+  color: #0077ff;
+  margin-bottom: 40px;
+}
+
+.doctor-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.doctor-card {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  padding: 20px;
+  width: 260px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.doctor-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 25px rgba(0,0,0,0.12);
+}
+
+.doctor-card img {
+  width: 100%;
+  border-radius: 15px;
+  height: 220px;
+  object-fit: cover;
+}
+
+.doctor-card h3 {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: #0077ff;
+}
+
+.doctor-card p {
+  color: #333;
+  font-size: 0.95rem;
+  margin-top: 5px;
+}
+
+/* Slogan */
+.slogan {
+  background: linear-gradient(90deg, #0077ff, #0abf53);
+  color: white;
+  text-align: center;
+  padding: 50px 10px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+/* Footer */
+footer {
+  background: #f8faff;
+  text-align: center;
+  padding: 25px;
+  font-size: 0.9rem;
+  color: #555;
+  border-top: 1px solid #ddd;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    background: white;
+    flex-direction: column;
+    top: 60px;
+    right: 6%;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .doctor-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
