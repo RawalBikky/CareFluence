@@ -190,25 +190,64 @@ body {
 
 /* ---------------------- */
 /* POSTS */
-/* ---------------------- */
-
-.posts-section {
-  max-width: 800px;
-  margin: 50px auto;
-  padding: 20px;
+.posts {
+  padding: 80px 8%;
+  background: #f7f9fc;
+  text-align: center;
 }
 
-.post {
+.posts h2 {
+  font-size: 2.2rem;
+  color: #0077ff;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+.post-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.post-card {
   background: #fff;
-  margin-bottom: 25px;
-  padding: 20px;
-  border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border: 1px solid #d0d0d0;
+  border-radius: 12px;
+  padding: 25px;
+  width: 280px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
 }
 
-.post h3 {
-  color: #0a74da;
-  margin-bottom: 10px;
+.post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.post-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: #333;
+  font-weight: 600;
+}
+
+.post-card p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.post-card a {
+  text-decoration: none;
+  color: #0077ff;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.post-card a:hover {
+  color: #0abf53;
 }
 
 /* ---------------------- */
@@ -807,65 +846,3 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
-/* Posts Section */
-.posts {
-  padding: 80px 8%;
-  background: #f7f9fc;
-  text-align: center;
-}
-
-.posts h2 {
-  font-size: 2.2rem;
-  color: #0077ff;
-  margin-bottom: 50px;
-  font-weight: bold;
-}
-
-.post-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-}
-
-.post-card {
-  background: #fff;
-  border: 1px solid #d0d0d0;
-  border-radius: 12px;
-  padding: 25px;
-  width: 280px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-  transition: all 0.3s ease;
-}
-
-.post-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
-}
-
-.post-card h3 {
-  font-size: 1.4rem;
-  margin-bottom: 12px;
-  color: #333;
-  font-weight: 600;
-}
-
-.post-card p {
-  font-size: 1rem;
-  margin-bottom: 15px;
-  color: #555;
-  line-height: 1.5;
-}
-
-.post-card a {
-  text-decoration: none;
-  color: #0077ff;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-
-.post-card a:hover {
-  color: #0abf53;
-}
-
-
