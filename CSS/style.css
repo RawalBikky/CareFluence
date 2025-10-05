@@ -295,20 +295,22 @@ footer {
 }
 
 /* ------------------- we work wr take video we take script ------------------- */
+
 .partner-logos {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  padding: 25px 0;
-  background: #ffffff;
+  padding: 20px 0;
+  background: #fff;
   border-top: 1px solid #eee;
 }
 
 .partner-logos img {
-  width: 16px;      /* favicon size */
-  height: 16px;     /* perfect 1:1 */
+  width: 16px !important;    /* Force 16px width */
+  height: 16px !important;   /* Force 16px height */
   object-fit: contain;
+  display: inline-block;
   filter: grayscale(100%);
   opacity: 0.9;
   transition: all 0.3s ease;
@@ -327,7 +329,7 @@ footer {
   }
 
   .partner-logos img {
-    width: 14px;
-    height: 14px;
+    width: 14px !important;
+    height: 14px !important;
   }
 }
