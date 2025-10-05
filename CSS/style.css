@@ -293,3 +293,43 @@ footer {
   .navbar { padding: 15px 30px; }
   .slogan { font-size: 1.8rem; padding: 40px 20px; }
 }
+
+/* ------------------- we work wr take video we take script ------------------- */
+
+.partner-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 60px 0;
+  flex-wrap: nowrap;
+  background: #fff;
+  border-top: 1px solid #eee;
+}
+
+.partner-logos img {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(80%);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.partner-logos img:hover {
+  filter: grayscale(0);
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .partner-logos {
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+
+  .partner-logos img {
+    width: 90px;
+  }
+}
+
