@@ -11,34 +11,52 @@
   <script defer src="js/main.js"></script>
 </head>
 <body>
-  <!-- Header -->
-  <header class="hero">
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">CareFluence</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#booking">Booking</a></li>
+        <li><a href="posts.html">Posts</a></li>
+        <li><a href="#doctors">Our Influencers</a></li>
+        <li><a href="#about-us">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero / Home -->
+  <section id="home" class="hero">
     <div class="hero-content">
       <h1>Care Fluence</h1>
       <p>Connecting you with the best doctors in Bangalore for every health need.</p>
       <a href="#booking" class="btn-primary">Book Appointment</a>
     </div>
-  </header>
+  </section>
 
   <!-- Our Doctors -->
-  <section class="doctors">
+  <section id="doctors" class="doctors">
     <h2>Meet our Health Influencers</h2>
     <div class="doctor-cards">
-      <!-- Doctor Card Template -->
       <div class="doctor-card">
         <img src="images/Akshay.JPG" alt="Doctor 1">
         <h3>Dr. Akshay</h3>
         <p>Specialty: Orthopedist</p>
         <p>Expert in Sports medicine surgeon care with over 15 years of experience. Known for patient-focused consultations.</p>
       </div>
-      <!-- Repeat for 10 doctors -->
       <div class="doctor-card">
         <img src="images/deepak.JPG" alt="Doctor 2">
         <h3>Dr. Deepak Inamdar</h3>
         <p>Specialty: Orthopedist Surgeon</p>
         <p>Renowned Robotic knee replacement surgeon helping patients overcome complex Knee issues.</p>
       </div>
-      <!-- ... Add 8 more doctors similarly ... -->
+      <!-- Add remaining doctors as needed -->
     </div>
   </section>
 
@@ -73,21 +91,30 @@
     </form>
   </section>
 
- <!-- About Us -->
-  <section class="about-us">
+  <!-- About Us -->
+  <section id="about-us" class="about-us">
     <h2>About CareFluence</h2>
     <p>“Our goal is to bring doctors onto social media, empower them to share reliable health and wellness information, and help them establish themselves as trusted health influencers.”</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: contact@carefluencenetwork.com</p>
+    <p>Phone: +91 9876543210</p>
+    <p>Address: Bangalore, India</p>
   </section>
 
   <!-- Slogan Section -->
   <section class="slogan">
     <h2>"We Script, We Shoot, We Edit, We Market!"</h2>
   </section>
-  
+
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 CareFluenceNetwork. Made with ❤️ in Bangalore.</p>
   </footer>
+
   <!-- Pop-up -->
   <div id="popup" class="popup">
     <div class="popup-content">
@@ -98,4 +125,3 @@
   </div>
 </body>
 </html>
-
