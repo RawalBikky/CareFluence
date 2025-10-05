@@ -300,26 +300,26 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
-  padding: 60px 0;
+  gap: 40px;
+  padding: 40px 0;
   flex-wrap: nowrap;
   background: #fff;
   border-top: 1px solid #eee;
 }
 
 .partner-logos img {
-  width: 120px;
+  width: 80px;        /* Reduced size */
   height: auto;
   object-fit: contain;
   filter: grayscale(80%);
-  opacity: 0.8;
+  opacity: 0.85;
   transition: all 0.3s ease;
 }
 
 .partner-logos img:hover {
   filter: grayscale(0);
   opacity: 1;
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 
 @media (max-width: 768px) {
@@ -329,7 +329,6 @@ footer {
   }
 
   .partner-logos img {
-    width: 90px;
+    width: 65px;     /* Smaller for mobile */
   }
 }
-
