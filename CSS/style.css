@@ -62,7 +62,7 @@ body {
 /* Hero Section - Fixed */
 .hero {
   width: 100%;
-  min-height: 90vh;
+  min-height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
