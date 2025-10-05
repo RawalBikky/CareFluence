@@ -1,126 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CareFluenceNetwork - Book Your Appointment</title>
-  <link rel="stylesheet" href="CSS/style.css">
-  <link rel="stylesheet" href="CSS/booking.css">
-  <!-- Favicon -->
-  <link rel="icon" href="images/carelogo.png" type="image/png">
-  <script defer src="js/main.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CareFluenceNetwork</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="icon" href="images/carelogo.png" type="image/png" />
 </head>
 <body>
   <!-- Navbar -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">CareFluence</div>
+  <header class="navbar">
+    <div class="logo">CareFluence<span>Network</span></div>
+    <nav>
       <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#booking">Booking</a></li>
-        <li><a href="posts.html">Posts</a></li>
-        <li><a href="#doctors">Our Influencers</a></li>
-        <li><a href="#about-us">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="booking.html">Book</a></li>
+        <li><a href="doctors.html">Doctors</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
     </nav>
+    <div class="hamburger">
+      <span></span><span></span><span></span>
+    </div>
   </header>
 
-  <!-- Hero / Home -->
+  <!-- Hero Section -->
   <section id="home" class="hero">
     <div class="hero-content">
-      <h1>Care Fluence</h1>
-      <p>Connecting you with the best doctors in Bangalore for every health need.</p>
-      <a href="#booking" class="btn-primary">Book Appointment</a>
+      <h1>Connecting You to Trusted Doctors</h1>
+      <p>Book your appointments with the best specialists in Bangalore — all in one place.</p>
+      <a href="booking.html" class="btn-primary">Book Appointment</a>
     </div>
   </section>
 
-  <!-- Our Doctors -->
-  <section id="doctors" class="doctors">
-    <h2>Meet our Health Influencers</h2>
+  <!-- About Preview -->
+  <section class="about-preview">
+    <div class="about-container">
+      <h2>About CareFluence</h2>
+      <p>
+        We help doctors become health influencers — building trust, 
+        spreading awareness, and creating a bridge between healthcare 
+        and the digital world.
+      </p>
+      <a href="about.html" class="btn-secondary">Know More</a>
+    </div>
+  </section>
+
+  <!-- Doctors Preview -->
+  <section class="doctors-preview">
+    <h2>Meet Our Health Influencers</h2>
     <div class="doctor-cards">
       <div class="doctor-card">
-        <img src="images/Akshay.JPG" alt="Doctor 1">
+        <img src="images/Akshay.jpg" alt="Dr. Akshay">
         <h3>Dr. Akshay</h3>
-        <p>Specialty: Orthopedist</p>
-        <p>Expert in Sports medicine surgeon care with over 15 years of experience. Known for patient-focused consultations.</p>
+        <p>Orthopedic Specialist</p>
       </div>
       <div class="doctor-card">
-        <img src="images/deepak.JPG" alt="Doctor 2">
+        <img src="images/deepak.jpg" alt="Dr. Deepak">
         <h3>Dr. Deepak Inamdar</h3>
-        <p>Specialty: Orthopedist Surgeon</p>
-        <p>Renowned Robotic knee replacement surgeon helping patients overcome complex Knee issues.</p>
+        <p>Orthopedic Surgeon</p>
       </div>
-      <!-- Add remaining doctors as needed -->
+      <div class="doctor-card">
+        <img src="images/doctor3.jpg" alt="Dr. Meera">
+        <h3>Dr. Meera Rao</h3>
+        <p>Dermatologist</p>
+      </div>
     </div>
+    <a href="doctors.html" class="btn-secondary">View All Doctors</a>
   </section>
 
-  <!-- Booking Form -->
-  <section id="booking" class="booking">
-    <h2>Book Your Appointment</h2>
-    <form id="appointmentForm">
-      <label for="name">Your Name*</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="email">Email*</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="phone">Phone*</label>
-      <input type="tel" id="phone" name="phone" required>
-
-      <label for="disease">Medical Condition / Disease*</label>
-      <input type="text" id="disease" name="disease" required>
-
-      <label for="doctor">Select Doctor*</label>
-      <select id="doctor" name="doctor" required>
-        <option value="">-- Select Doctor --</option>
-        <option value="Dr. Akshay">Dr. Akshay - Orthopediast</option>
-        <option value="Dr. Deepak Inamdar">Dr. Deepak Inamdar - Orthopediac Surgeon</option>
-        <!-- Add remaining doctors -->
-      </select>
-
-      <label for="message">Additional Details</label>
-      <textarea id="message" name="message" rows="4"></textarea>
-
-      <button type="submit" class="btn-primary">Submit</button>
-    </form>
-  </section>
-
-  <!-- About Us -->
-  <section id="about-us" class="about-us">
-    <h2>About CareFluence</h2>
-    <p>“Our goal is to bring doctors onto social media, empower them to share reliable health and wellness information, and help them establish themselves as trusted health influencers.”</p>
-  </section>
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <p>Email: contact@carefluencenetwork.com</p>
-    <p>Phone: +91 9876543210</p>
-    <p>Address: Bangalore, India</p>
-  </section>
-
-  <!-- Slogan Section -->
+  <!-- Slogan -->
   <section class="slogan">
     <h2>"We Script, We Shoot, We Edit, We Market!"</h2>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 CareFluenceNetwork. Made with ❤️ in Bangalore.</p>
+    <p>&copy; 2025 CareFluenceNetwork | Made with ❤️ in Bangalore</p>
   </footer>
 
-  <!-- Pop-up -->
-  <div id="popup" class="popup">
-    <div class="popup-content">
-      <span id="closePopup" class="close">&times;</span>
-      <h3>Thank you!</h3>
-      <p>We will reach out to you shortly to confirm your appointment.</p>
-    </div>
-  </div>
+  <!-- Script -->
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+      hamburger.classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
