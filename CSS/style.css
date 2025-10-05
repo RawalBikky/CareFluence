@@ -333,14 +333,19 @@ body {
 /* Social Icons */
 .social-icons a {
   font-size: 32px;
-  color: #0077ff;
-  margin: 0 10px;
-  transition: transform 0.3s;
+  transition: transform 0.3s, color 0.3s;
 }
 
+/* True brand colors */
+.social-icons a.instagram i { color: #E1306C; }  /* Instagram */
+.social-icons a.facebook i { color: #1877F2; }   /* Facebook */
+.social-icons a.youtube i { color: #FF0000; }    /* YouTube */
+.social-icons a.gmail i { color: #D44638; }      /* Gmail/Email */
+
+/* Hover effect */
 .social-icons a:hover {
   transform: scale(1.2);
-  color: #0abf53;
+  opacity: 0.8;  /* subtle hover effect without changing color */
 }
 
 /* ---------------------- */
@@ -367,7 +372,6 @@ body {
   transform: scale(1.1);
   filter: none;
 }
-/* --------Contact Social media icons-------------- */
 
 /* ---------------------- */
 /* FOOTER */
