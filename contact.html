@@ -17,6 +17,118 @@
   
   <!-- JS -->
   <script defer src="js/main.js"></script>
+
+  <style>
+    /* Full-width contact section with centered card */
+    .contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 80px 20px;
+      background: #f0f6ff;
+      min-height: 90vh;
+    }
+
+    .contact h2 {
+      font-size: 2.2rem;
+      color: #0077ff;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .contact-card {
+      background: #ffffff;
+      border: 1px solid #d0d0d0;
+      border-radius: 12px;
+      padding: 40px 30px;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    }
+
+    .contact-card form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 500;
+      color: #333;
+    }
+
+    .contact-card form input,
+    .contact-card form textarea {
+      width: 100%;
+      padding: 12px 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .contact-card form input:focus,
+    .contact-card form textarea:focus {
+      outline: none;
+      border-color: #0077ff;
+      box-shadow: 0 0 5px rgba(0, 119, 255, 0.3);
+    }
+
+    .contact-card form button {
+      width: 100%;
+      background: #0077ff;
+      color: #fff;
+      padding: 12px;
+      border-radius: 25px;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .contact-card form button:hover {
+      background: #0abf53;
+    }
+
+    /* Social icons below form */
+    .social-icons {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .social-icons a {
+      font-size: 1.8rem;
+      color: inherit;
+      transition: all 0.3s ease;
+    }
+
+    .social-icons a.instagram { color: #E4405F; }
+    .social-icons a.facebook { color: #3b5998; }
+    .social-icons a.youtube { color: #FF0000; }
+    .social-icons a.gmail { color: #D44638; }
+
+    .social-icons a:hover {
+      transform: scale(1.2);
+    }
+
+    /* Footer with contact info */
+    footer {
+      background: #0a74da;
+      color: #fff;
+      text-align: center;
+      padding: 25px 20px;
+    }
+
+    footer .footer-info p {
+      margin: 5px 0;
+    }
+
+    /* Responsive */
+    @media (max-width:768px){
+      .contact-card { padding: 30px 20px; }
+      .contact h2 { font-size: 1.8rem; }
+      .social-icons { gap: 15px; }
+    }
+  </style>
 </head>
 <body>
   <!-- Navbar -->
@@ -24,12 +136,12 @@
     <nav class="navbar">
       <div class="logo">CareFluence</div>
       <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="index.html#booking">Booking</a></li>
         <li><a href="posts.html">Posts</a></li>
         <li><a href="index.html#doctors">Our Influencers</a></li>
         <li><a href="index.html#about-us">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
       <div class="hamburger">
         <span></span>
@@ -43,8 +155,7 @@
   <section id="contact" class="contact">
     <h2>Get in Touch</h2>
 
-    <!-- Contact Form -->
-    <div class="contact-form">
+    <div class="contact-card">
       <form id="contactForm">
         <label for="fullName">Full Name</label>
         <input type="text" id="fullName" name="fullName" placeholder="Your full name" required>
@@ -57,21 +168,21 @@
 
         <button type="submit" class="btn-primary">Send Message</button>
       </form>
-    </div>
 
-    <!-- Social Media Icons -->
-    <div class="social-icons">
-      <a href="https://instagram.com" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
-      <a href="https://facebook.com" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://youtube.com" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a>
-      <a href="mailto:contact@carefluencenetwork.com" class="gmail"><i class="fas fa-envelope"></i></a>
+      <!-- Social Media Icons -->
+      <div class="social-icons">
+        <a href="https://instagram.com" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://youtube.com" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a>
+        <a href="mailto:contact@carefluencenetwork.com" class="gmail"><i class="fas fa-envelope"></i></a>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
     <div class="footer-info">
-      <p><strong>Email:</strong> <a href="mailto:contact@carefluencenetwork.com">contact@carefluencenetwork.com</a></p>
+      <p><strong>Email:</strong> <a href="mailto:contact@carefluencenetwork.com" style="color:white;">contact@carefluencenetwork.com</a></p>
       <p><strong>Phone:</strong> +91 9876543210</p>
       <p><strong>Address:</strong> Bangalore, India</p>
     </div>
