@@ -385,6 +385,19 @@ body {
   transform: scale(1.1);
   filter: none;
 }
+/* --------Contact Social media icons-------------- */
+.social-icons a {
+  font-size: 32px;
+  color: #0077ff;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #0abf53;
+}
+
 
 /* ---------------------- */
 /* FOOTER */
