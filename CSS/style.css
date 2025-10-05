@@ -266,37 +266,87 @@ body {
 /* ---------------------- */
 /* CONTACT SECTION */
 /* ---------------------- */
-
-.contact-section {
-  max-width: 600px;
-  margin: 60px auto;
+.contact {
+  padding: 50px 20px;
   text-align: center;
-  padding: 20px;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  background: #f0f8ff;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #0077ff;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  color: #0077ff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 30px auto;
+  text-align: left;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 10px;
+  padding: 10px 12px;
   margin-bottom: 15px;
+  border-radius: 8px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  font-size: 1rem;
 }
 
 .contact-form button {
-  background: #0a74da;
+  display: inline-block;
+  background: #0077ff;
   color: #fff;
-  border: none;
   padding: 10px 25px;
-  border-radius: 5px;
+  border-radius: 25px;
+  border: none;
+  font-weight: 600;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .contact-form button:hover {
-  background: #085bb6;
+  background: #0abf53;
+}
+
+/* Social Icons */
+.social-icons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
 }
 
 /* ---------------------- */
