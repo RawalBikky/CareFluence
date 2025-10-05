@@ -1,53 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact - CareFluenceNetwork</title>
   
-  <!-- Link your CSS files here -->
+  <!-- CSS -->
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="stylesheet" href="CSS/booking.css">
 
-  <!-- Optional favicon -->
+  <!-- Favicon -->
   <link rel="icon" href="images/carelogo.png" type="image/png">
+
+  <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
-  <!-- Optional JS -->
+  <!-- JS -->
   <script defer src="js/main.js"></script>
 </head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">CareFluence</div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="index.html#booking">Booking</a></li>
+        <li><a href="posts.html">Posts</a></li>
+        <li><a href="index.html#doctors">Our Influencers</a></li>
+        <li><a href="index.html#about-us">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
 
-<!-- Contact Section -->
-<section id="contact" class="contact">
-  <h2>Get in Touch</h2>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Get in Touch</h2>
 
-  <!-- Contact Info -->
-  <div class="contact-info">
-    <p><strong>Email:</strong> <a href="mailto:contact@carefluencenetwork.com">contact@carefluencenetwork.com</a></p>
-    <p><strong>Phone:</strong> +91 9876543210</p>
-    <p><strong>Address:</strong> Bangalore, India</p>
-  </div>
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <form id="contactForm">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Your full name" required>
 
-  <!-- Contact Form -->
-  <div class="contact-form">
-    <form id="contactForm">
-      <label for="fullName">Full Name</label>
-      <input type="text" id="fullName" name="fullName" placeholder="Your full name" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
 
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" placeholder="Your email" required>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Type your message..." required></textarea>
 
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="4" placeholder="Type your message..." required></textarea>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </div>
 
-      <button type="submit" class="btn-primary">Send Message</button>
-    </form>
-  </div>
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+      <a href="https://instagram.com" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://facebook.com" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://youtube.com" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a>
+      <a href="mailto:contact@carefluencenetwork.com" class="gmail"><i class="fas fa-envelope"></i></a>
+    </div>
+  </section>
 
-  <!-- Social Media Icons -->
-<div class="social-icons">
-  <a href="https://instagram.com" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
-  <a href="https://facebook.com" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
-  <a href="https://youtube.com" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a>
-  <a href="mailto:contact@carefluencenetwork.com" class="gmail"><i class="fas fa-envelope"></i></a>
-</div>
-
-
+  <!-- Footer -->
+  <footer>
+    <div class="footer-info">
+      <p><strong>Email:</strong> <a href="mailto:contact@carefluencenetwork.com">contact@carefluencenetwork.com</a></p>
+      <p><strong>Phone:</strong> +91 9876543210</p>
+      <p><strong>Address:</strong> Bangalore, India</p>
+    </div>
+    <p>&copy; 2025 CareFluenceNetwork. Made with ❤️ in Bangalore.</p>
+  </footer>
+</body>
+</html>
