@@ -331,34 +331,16 @@ body {
 }
 
 /* Social Icons */
-.social-icons {
-  margin-top: 25px;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.social-icons img {
-  width: 32px;
-  height: 32px;
+.social-icons a {
+  font-size: 32px;
+  color: #0077ff;
+  margin: 0 10px;
   transition: transform 0.3s;
-  cursor: pointer;
 }
 
-.social-icons img:hover {
+.social-icons a:hover {
   transform: scale(1.2);
-}
-.contact-info {
-  margin-bottom: 30px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  margin-bottom: 20px;
-}
-
-.social-icons {
-  margin-top: 40px;
+  color: #0abf53;
 }
 
 /* ---------------------- */
@@ -386,18 +368,6 @@ body {
   filter: none;
 }
 /* --------Contact Social media icons-------------- */
-.social-icons a {
-  font-size: 32px;
-  color: #0077ff;
-  margin: 0 10px;
-  transition: transform 0.3s;
-}
-
-.social-icons a:hover {
-  transform: scale(1.2);
-  color: #0abf53;
-}
-
 
 /* ---------------------- */
 /* FOOTER */
