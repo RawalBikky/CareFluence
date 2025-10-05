@@ -692,24 +692,98 @@ footer {
   }
 }
 
-/*Home about contact section letters format change*/
-/* For header/navbar icons if you are using icons */
+/* Navbar Container */
+.navbar {
+  width: 100%;
+  background: linear-gradient(135deg, #0077ff, #0abf53); /* gradient like hero */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%; /* bigger padding */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Logo Styling */
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.logo span {
+  color: #ffe600; /* accent color */
+  font-weight: 600;
+}
+
+/* Navbar Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 35px; /* bigger spacing */
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.1rem; /* larger text */
+  display: flex;
+  align-items: center;
+  gap: 8px; /* space between icon and text */
+  transition: all 0.3s ease;
+}
+
 .nav-links li a i {
-    font-size: 1.5rem; /* makes icons bigger */
-    vertical-align: middle;
+  font-size: 1.3rem; /* bigger icons */
 }
 
-/* If using images for icons instead of font-awesome */
-.nav-links li a img {
-    width: 28px;      /* desktop size */
-    height: 28px;     /* desktop size */
-    object-fit: contain;
-    vertical-align: middle;
+/* Hover & Active State */
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #ffe600;
+  border-bottom: 2px solid #ffe600;
+  transform: scale(1.05);
 }
 
-/* Optional hover effect for aesthetics */
-.nav-links li a:hover i,
-.nav-links li a:hover img {
-    transform: scale(1.2);
-    transition: transform 0.3s ease;
+/* Hamburger Menu for Mobile */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background: #fff;
+  margin: 5px 0;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 8%;
+    background: #0077ff;
+    flex-direction: column;
+    width: 200px;
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
 }
