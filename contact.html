@@ -1,33 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | CareFluence</title>
-  <link rel="stylesheet" href="CSS/style.css" />
-</head>
-<body>
-  <nav class="navbar">
-    <div class="logo">CareFluence</div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="booking.html">Booking</a></li>
-      <li><a href="posts.html">Posts</a></li>
-      <li><a href="doctors.html">Our Influencers</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html" class="active">Contact</a></li>
-    </ul>
-  </nav>
+<!-- Contact Section -->
+<section id="contact" class="contact">
+  <h2>Get in Touch</h2>
 
-  <section class="contact-section">
-    <h2>Get in Touch</h2>
-    <form class="contact-form">
-      <input type="text" placeholder="Full Name" required>
-      <input type="email" placeholder="Email" required>
-      <textarea placeholder="Message" rows="4" required></textarea>
-      <button type="submit" class="btn">Send Message</button>
+  <!-- Contact Info -->
+  <div class="contact-info">
+    <p><strong>Email:</strong> <a href="mailto:contact@carefluencenetwork.com">contact@carefluencenetwork.com</a></p>
+    <p><strong>Phone:</strong> +91 9876543210</p>
+    <p><strong>Address:</strong> Bangalore, India</p>
+  </div>
+
+  <!-- Contact Form -->
+  <div class="contact-form">
+    <form id="contactForm">
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" name="fullName" placeholder="Your full name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" placeholder="Type your message..." required></textarea>
+
+      <button type="submit" class="btn-primary">Send Message</button>
     </form>
-  </section>
-</body>
-</html>
+  </div>
 
+  <!-- Social Media Icons -->
+  <div class="social-icons">
+    <a href="https://instagram.com" target="_blank"><img src="images/insta.png" alt="Instagram"></a>
+    <a href="https://facebook.com" target="_blank"><img src="images/fb.png" alt="Facebook"></a>
+    <a href="https://youtube.com" target="_blank"><img src="images/yt.png" alt="YouTube"></a>
+    <a href="mailto:contact@carefluencenetwork.com"><img src="images/gmail.png" alt="Gmail"></a>
+  </div>
+</section>
