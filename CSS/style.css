@@ -787,3 +787,24 @@ footer {
     display: flex;
   }
 }
+/* Footer Styling */
+footer {
+  background: #0a74da; /* same as contact.html */
+  color: #fff;
+  text-align: center;
+  padding: 25px 20px;
+}
+
+footer .footer-info p {
+  margin: 5px 0;
+}
+
+footer a {
+  color: white; /* make links white */
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
