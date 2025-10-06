@@ -5,8 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Our Influencers | CareFluence</title>
   <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="icon" href="images/carelogo.png?v=3" type="image/png" />
   <!-- Google Fonts for stylish look -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+  <script>
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+    hamburger.classList.toggle('open');
+  });
+</script>
   <style>
     /* Influencers Section */
     .influencers-section {
@@ -82,17 +91,23 @@
   </style>
 </head>
 <body>
-  <nav class="navbar">
-    <div class="logo">CareFluence</div>
+  
+ <header class="navbar">
+  <div class="logo">CareFluence<span>Network</span></div>
+  <nav>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="booking.html">Booking</a></li>
-      <li><a href="posts.html">Posts</a></li>
-      <li><a href="doctors.html" class="active">Our Influencers</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html#home"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="booking.html"><i class="fas fa-calendar-check"></i> Book</a></li>
+      <li><a href="posts.html"><i class="fas fa-newspaper"></i> Posts</a></li>
+      <li><a href="doctors.html"><i class="fas fa-user-md"></i> Doctors</a></li>
+      <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+      <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
     </ul>
   </nav>
+  <div class="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</header>
 
   <section class="influencers-section">
     <h2>Meet Our Influencers</h2>
