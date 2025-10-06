@@ -882,4 +882,22 @@ footer a:hover {
     flex: 1 1 80%; /* adjust width for mobile */
   }
 }
+.card h3 {
+  font-size: 1.5rem; /* increase from 1.3rem to 1.5rem */
+  color: #0077ff;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
 
+.card p {
+  font-size: 1.05rem; /* increase from 0.95rem to 1.05rem */
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.card .description {
+  font-size: 1rem; /* increase from 0.9rem to 1rem */
+  color: #777;
+  font-style: italic;
+  line-height: 1.4;
+}
