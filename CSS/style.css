@@ -847,3 +847,145 @@ footer a:hover {
   text-decoration: underline;
 }
 
+/* doctors html */
+/* Influencers Section */
+.influencers-section {
+  text-align: center;
+  padding: 80px 10%;
+  background: #f8faff;
+}
+
+.influencers-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #0077ff;
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+
+.influencers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background: #fff;
+  padding: 25px 20px;
+  border-radius: 15px;
+  width: 260px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 50%;
+  height: 220px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  color: #0077ff;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.card .description {
+  font-size: 0.9rem;
+  color: #777;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .influencers {
+    flex-direction: column;
+    align-items: center;
+  }
+}/* Influencers Section */
+.influencers-section {
+  text-align: center;
+  padding: 80px 10%;
+  background: #f8faff;
+}
+
+.influencers-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #0077ff;
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+
+.influencers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background: #fff;
+  padding: 25px 20px;
+  border-radius: 15px;
+  width: 260px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 50%;
+  height: 220px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  color: #0077ff;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.card .description {
+  font-size: 0.9rem;
+  color: #777;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .influencers {
+    flex-direction: column;
+    align-items: center;
+  }
+}
