@@ -847,14 +847,3 @@ footer a:hover {
   text-decoration: underline;
 }
 
-.nav-links li a {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: 500; /* ensure weight stays consistent */
-}
-
-.nav-links i {
-  vertical-align: middle;
-}
-
