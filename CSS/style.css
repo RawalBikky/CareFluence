@@ -869,7 +869,7 @@ footer a:hover {
 .card img {
   width: 100%;
   border-radius: 15px; /* optional: less circular, more rectangle */
-  height: 400px; /* increase height for bigger images */
+  height: 600px; /* increase height for bigger images */
   object-fit: cover;
   margin-bottom: 15px;
 }
