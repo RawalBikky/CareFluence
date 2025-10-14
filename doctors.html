@@ -9,28 +9,28 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <!-- Google Fonts for stylish look -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
-
 </head>
 <body>
   
-<header class="navbar">
-  <div class="logo">CareFluence<span>Network</span></div>
-  <nav>
-    <ul class="nav-links">
-      <li><a href="index.html#home"><i class="fas fa-home"></i> Home</a></li>
-      <li><a href="booking.html"><i class="fas fa-calendar-check"></i> Book</a></li>
-      <li><a href="Posts.html"><i class="fas fa-newspaper"></i> Posts</a></li>
-      <li><a href="doctors.html"><i class="fas fa-user-md"></i> Doctors</a></li>
-      <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
-      <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
-    </ul>
-  </nav>
-  <div class="hamburger">
-    <span></span><span></span><span></span>
-  </div>
-</header>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">CareFluence<span>Network</span></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html#home"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="booking.html"><i class="fas fa-calendar-check"></i> Book</a></li>
+        <li><a href="Posts.html"><i class="fas fa-newspaper"></i> Posts</a></li>
+        <li><a href="doctors.html" class="active"><i class="fas fa-user-md"></i> Doctors</a></li>
+        <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </header>
 
-
+  <!-- Influencers Section -->
   <section class="influencers-section">
     <h2>Meet Our Influencers</h2>
     <div class="influencers">
@@ -71,25 +71,25 @@
       </div>
     </div>
   </section>
+
   <!-- Footer -->
-<footer>
-  <div class="footer-info">
-    <p><strong>Email:</strong> <a href="mailto:contact@carefluencenetwork.com" style="color:white;">contact@carefluencenetwork.com</a></p>
-    <p><strong>Phone:</strong> +91 9876543210</p>
-    <p><strong>Address:</strong> Bangalore, India</p>
-  </div>
-  <p>&copy; 2025 CareFluenceNetwork. Made with ❤️ in Bangalore.</p>
-</footer>
+  <footer>
+    <div class="footer-info">
+      <p><strong>Email:</strong> <a href="mailto:contact@carefluencenetwork.com" style="color:white;">contact@carefluencenetwork.com</a></p>
+      <p><strong>Phone:</strong> +91 9876543210</p>
+      <p><strong>Address:</strong> Bangalore, India</p>
+    </div>
+    <p>&copy; 2025 CareFluenceNetwork. Made with ❤️ in Bangalore.</p>
+  </footer>
   
+  <!-- Navbar Script -->
   <script>
-  document.addEventListener('DOMContentLoaded', () => {
-  const hamburger = document.querySelector('.hamburger');
-  const navLinks = document.querySelector('.nav-links');
-  hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-    hamburger.classList.toggle('open');
-  });
-});
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+      hamburger.classList.toggle('open');
+    });
   </script>
 </body>
 </html>
