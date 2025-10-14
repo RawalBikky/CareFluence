@@ -82,19 +82,19 @@
   </script>
   <!-- Footer -->
 <!-- Footer -->
-<footer style="background:#0a74da; color:white; padding:25px 20px; text-align:center; font-family: 'Roboto', sans-serif;">
-  <div style="display:flex; flex-direction: column; align-items: center; gap: 15px;">
+<footer style="background:#0a74da; color:white; padding:20px 15px; font-family:'Roboto', sans-serif;">
+  <div style="max-width:1200px; margin:0 auto; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:15px;">
 
-    <!-- Contact Info in One Line -->
-    <div style="display:flex; flex-wrap: wrap; justify-content: center; gap: 30px; font-size: 0.95rem;">
-      <span><strong>Email:</strong> <a href="mailto:contact@carefluencenetwork.com" style="color:white; text-decoration:underline;">contact@carefluencenetwork.com</a></span>
-      <span><strong>Phone:</strong> +91 6364011826</span>
-      <span><strong>Address:</strong> Bangalore, India</span>
+    <!-- Left: Contact Info -->
+    <div style="display:flex; flex-wrap:wrap; gap:20px; font-size:0.95rem;">
+      <span><i class="fas fa-envelope"></i> <a href="mailto:contact@carefluencenetwork.com" style="color:white; text-decoration:none;">contact@carefluencenetwork.com</a></span>
+      <span><i class="fas fa-phone"></i> +91 6364011826</span>
+      <span><i class="fas fa-map-marker-alt"></i> Bangalore, India</span>
     </div>
 
-    <!-- Social Media Icons -->
-    <div class="social-icons" style="display:flex; gap:25px; font-size:1.6rem; margin-top:10px;">
-      <a href="https://www.instagram.com/carefluence.tv" target="_blank" rel="noopener noreferrer" aria-label="Instagram" style="color:#E4405F; transition:0.3s;"> 
+    <!-- Right: Social Icons -->
+    <div class="social-icons" style="display:flex; gap:20px; font-size:1.6rem;">
+      <a href="https://www.instagram.com/carefluence.tv" target="_blank" rel="noopener noreferrer" aria-label="Instagram" style="color:#E4405F; transition:0.3s;">
         <i class="fab fa-instagram"></i>
       </a>
       <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" style="color:#3b5998; transition:0.3s;">
@@ -108,17 +108,30 @@
       </a>
     </div>
 
-    <!-- Copyright -->
-    <div style="margin-top:10px; font-size:0.85rem;">
-      &copy; 2025 CareFluenceNetwork. Made with ❤️ in Bangalore.
-    </div>
+  </div>
+
+  <!-- Bottom line -->
+  <div style="text-align:center; font-size:0.85rem; margin-top:12px;">
+    &copy; 2025 CareFluenceNetwork. Made with ❤️ in Bangalore.
   </div>
 </footer>
 
-<!-- Optional: Simple hover effect for icons -->
 <style>
+  /* Hover effect for social icons */
   .social-icons a:hover {
     transform: scale(1.2);
+  }
+
+  /* Responsive for small screens */
+  @media(max-width:768px){
+    footer div:first-child {
+      justify-content:center;
+      text-align:center;
+    }
+    .social-icons {
+      justify-content:center;
+      margin-top:10px;
+    }
   }
 </style>
 
