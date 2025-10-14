@@ -901,30 +901,43 @@ footer a:hover {
   font-style: italic;
   line-height: 1.4;
 }
-/*Floating icons */
-.floating-icons {
+
+.hero::before {
+  content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none; /* so icons don’t block clicks */
-  overflow: hidden;
-  z-index: 0; /* below hero text */
+  top: 10%;
+  left: 20%;
+  width: 200px;
+  height: 200px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 50%;
+  z-index:0;
+}
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.hero {
+  background: linear-gradient(90deg, #007BFF, #00C896, #007BFF);
+  background-size: 300% 300%;
+  animation: gradientShift 10s ease infinite;
 }
 
-.floating-icons i {
-  position: absolute;
-  font-size: 20px;
-  color: rgba(255, 255, 255, 0.7); /* semi-transparent, blends with hero */
-  animation: floatAnim linear infinite;
+@keyframes gradientShift {
+  0%{ background-position:0% 50%; }
+  50%{ background-position:100% 50%; }
+  100%{ background-position:0% 50%; }
 }
-
-/* Random float animation using keyframes */
-@keyframes floatAnim {
-  0% { transform: translate(0,0) rotate(0deg); opacity: 0.5; }
-  50% { opacity: 1; }
-  100% { transform: translate(100px, -200px) rotate(360deg); opacity: 0.5; }
+@media (max-width: 768px){
+  .hero {
+    padding: 60px 15px;
+  }
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
 }
 
 
