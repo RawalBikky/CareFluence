@@ -901,5 +901,12 @@ footer a:hover {
   font-style: italic;
   line-height: 1.4;
 }
+.floating-icons i {
+  position: absolute;           /* makes the icons float freely */
+  font-size: 2.5rem;            /* size of the icons */
+  color: rgba(255,255,255,0.8); /* semi-transparent white for gradient background */
+  z-index: 1;                    /* behind the text */
+  pointer-events: none;          /* clicks pass through icons */
+}
 
 
