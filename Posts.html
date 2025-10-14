@@ -5,22 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CareFluenceNetwork - Posts</title>
   <link rel="stylesheet" href="CSS/style.css">
+  <link rel="icon" href="images/carelogo.png?v=3" type="image/png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">CareFluence</div>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">CareFluence<span>Network</span></div>
+    <nav>
       <ul class="nav-links">
-        <li><a href="index.html#home">Home</a></li>
-        <li><a href="index.html#booking">Booking</a></li>
-        <li><a href="Posts.html">Posts</a></li>
-        <li><a href="index.html#doctors">Our Influencers</a></li>
-        <li><a href="index.html#about-us">About</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="index.html#home"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="booking.html"><i class="fas fa-calendar-check"></i> Book</a></li>
+        <li><a href="posts.html" class="active"><i class="fas fa-newspaper"></i> Posts</a></li>
+        <li><a href="doctors.html"><i class="fas fa-user-md"></i> Doctors</a></li>
+        <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
       </ul>
     </nav>
+    <div class="hamburger">
+      <span></span><span></span><span></span>
+    </div>
   </header>
 
+  <!-- Posts Section -->
   <section class="posts">
     <h2>Health Tips & Articles</h2>
     <div class="post-cards">
@@ -39,13 +46,23 @@
   </section>
 
   <!-- Footer -->
-<footer>
-  <div class="footer-info">
-    <p><strong>Email:</strong> <a href="mailto:contact@carefluencenetwork.com" style="color:white;">contact@carefluencenetwork.com</a></p>
-    <p><strong>Phone:</strong> +91 9876543210</p>
-    <p><strong>Address:</strong> Bangalore, India</p>
-  </div>
-  <p>&copy; 2025 CareFluenceNetwork. Made with ❤️ in Bangalore.</p>
-</footer>
+  <footer>
+    <div class="footer-info">
+      <p><strong>Email:</strong> <a href="mailto:contact@carefluencenetwork.com" style="color:white;">contact@carefluencenetwork.com</a></p>
+      <p><strong>Phone:</strong> +91 9876543210</p>
+      <p><strong>Address:</strong> Bangalore, India</p>
+    </div>
+    <p>&copy; 2025 CareFluenceNetwork. Made with ❤️ in Bangalore.</p>
+  </footer>
+
+  <!-- Navbar Script -->
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+      hamburger.classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
