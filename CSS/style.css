@@ -939,6 +939,42 @@ footer a:hover {
     font-size: 1rem;
   }
 }
+/* Trusted Hospitals inside Hero */
+.trusted-hospitals {
+  margin-top: 55px;
+  padding: 25px 20px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(4px);
+  text-align: center;
+}
+
+.trusted-hospitals h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.trusted-hospitals p {
+  font-size: 1.05rem;
+  color: #eaf4ff;
+  margin-bottom: 30px;
+}
+
+.trusted-hospitals-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  flex-wrap: wrap;
+}
+
+.trusted-hospitals-logos img {
+  height: 85px;
+  width: auto;
+}
+
 
 
 
