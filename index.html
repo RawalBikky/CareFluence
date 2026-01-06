@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CareFluenceNetwork</title>
+
   <link rel="stylesheet" href="CSS/style.css" />
   <link rel="icon" href="images/carelogo.png?v=3" type="image/png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
@@ -26,28 +27,6 @@
     .doctor-card:hover {
       transform: translateY(-6px);
       box-shadow: 0 10px 28px rgba(0,0,0,0.12);
-    }
-
-    .client-logo {
-      padding: 18px 28px;
-      border-radius: 14px;
-      transition: transform 0.3s ease;
-    }
-
-    .client-logo img {
-      max-width: 180px;
-      filter: grayscale(100%);
-      opacity: 0.85;
-      transition: 0.3s ease;
-    }
-
-    .client-logo:hover img {
-      filter: grayscale(0%);
-      opacity: 1;
-    }
-
-    .client-logo:hover {
-      transform: translateY(-4px);
     }
   </style>
 </head>
@@ -73,132 +52,122 @@
 </header>
 
 <!-- Hero Section -->
-<section id="home" class="hero" style="position:relative; background: linear-gradient(90deg, #007BFF, #00C896); color:#fff; padding:80px 20px; text-align:center;">
-  <div class="hero-content" style="max-width:900px; margin:0 auto; position:relative; z-index:1;">
+<section id="home" class="hero"
+  style="position:relative; background: linear-gradient(90deg, #007BFF, #00C896); color:#fff; padding:80px 20px; text-align:center;">
+  
+  <div class="hero-content"
+    style="max-width:900px; margin:0 auto; position:relative; z-index:1;">
+
     <h1 style="font-size:2.8rem; font-weight:700; margin-bottom:20px; line-height:1.25;">
       We Script, We Shoot, We Edit, We Market!
     </h1>
+
     <p style="font-size:1.3rem; line-height:1.8; margin-bottom:30px; color:#f1f1f1;">
       At CareFluenceNetwork, we empower doctors to become professional social media influencers using advanced digital tools, making healthcare guidance accessible to everyone.
     </p>
-    <a href="booking.html" class="btn-primary" style="background:#fff; color:#007BFF; padding:15px 30px; border-radius:30px; font-size:1.1rem; font-weight:600;">
+
+    <a href="booking.html" class="btn-primary"
+      style="background:#fff; color:#007BFF; padding:15px 30px; border-radius:30px; font-size:1.1rem; font-weight:600;">
       Book Appointment
     </a>
+
+    <!-- Trusted Hospitals INSIDE Hero -->
+    <div style="margin-top:45px;">
+      <h3 style="font-size:1.3rem; font-weight:600; margin-bottom:8px; color:#ffffff;">
+        Trusted By Leading Hospitals
+      </h3>
+
+      <p style="font-size:0.95rem; color:#eaf4ff; margin-bottom:25px;">
+        Collaborating with reputed healthcare institutions across India
+      </p>
+
+      <div style="display:flex; justify-content:center; align-items:center; gap:50px; flex-wrap:wrap;">
+        <img src="images/apollo.jpeg" alt="Apollo Hospitals" style="height:60px; width:auto;">
+        <img src="images/manipal.jpeg" alt="Manipal Hospitals" style="height:60px; width:auto;">
+      </div>
+    </div>
+
   </div>
-  <canvas id="floating-icons-canvas" style="position:absolute; inset:0; z-index:0;"></canvas>
+
+  <canvas id="floating-icons-canvas"
+    style="position:absolute; inset:0; z-index:0;"></canvas>
 </section>
 
 <!-- About Preview -->
-<section class="about-preview" style="background:#f0f6ff; padding:65px 20px; text-align:center;">
+<section class="about-preview"
+  style="background:#f0f6ff; padding:65px 20px; text-align:center;">
+  
   <h2 style="font-size:2rem; margin-bottom:20px; color:#0a74da;">
     Bringing Doctors & Patients Closer
   </h2>
+
   <p style="font-size:1.1rem; line-height:1.7; margin-bottom:30px; color:#333;">
     CareFluenceNetwork bridges the gap between healthcare professionals and audiences by enabling trusted digital presence and seamless appointment access.
   </p>
-  <a href="about.html" class="btn-secondary" style="padding:12px 25px;">Know More</a>
-</section>
 
-  <!-- Clients Section -->
-<section class="clients-section" style="background:#ffffff; padding:70px 20px; text-align:center;">
-  <h2 style="font-size:2rem; margin-bottom:15px; color:#0a74da;">
-    Trusted By Leading Hospitals
-  </h2>
-  <p style="font-size:1.05rem; color:#555; margin-bottom:45px;">
-    Collaborating with reputed healthcare institutions across India
-  </p>
-
-  <div style="
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:80px;
-    flex-wrap:wrap;
-  ">
-    <div class="client-logo" style="display:flex; align-items:center;">
-      <img 
-        src="images/apollo.jpeg" 
-        alt="Apollo Hospitals"
-        style="height:80px; width:auto;"
-      >
-    </div>
-
-    <div class="client-logo" style="display:flex; align-items:center;">
-      <img 
-        src="images/manipal.jpeg" 
-        alt="Manipal Hospitals"
-        style="height:80px; width:auto;"
-      >
-    </div>
-  </div>
+  <a href="about.html" class="btn-secondary" style="padding:12px 25px;">
+    Know More
+  </a>
 </section>
 
 <!-- Doctors Preview -->
-<section class="doctors-preview" style="background:#ffffff; padding:65px 20px; text-align:center;">
-  <h2 style="font-size:2rem; margin-bottom:45px; color:#0a74da;">Meet Our Health Influencers</h2>
+<section class="doctors-preview"
+  style="background:#ffffff; padding:65px 20px; text-align:center;">
+  
+  <h2 style="font-size:2rem; margin-bottom:45px; color:#0a74da;">
+    Meet Our Health Influencers
+  </h2>
 
-  <div class="doctor-cards" style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px;">
-    <div class="doctor-card" style="background:white; border-radius:12px; padding:20px; max-width:250px;">
-      <img src="images/Akshay.JPG" alt="Dr. Akshay" style="width:100%; border-radius:12px; margin-bottom:15px;">
+  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px;">
+    <div class="doctor-card"
+      style="background:white; border-radius:12px; padding:20px; max-width:250px;">
+      <img src="images/Akshay.JPG" alt="Dr. Akshay"
+        style="width:100%; border-radius:12px; margin-bottom:15px;">
       <h3 style="color:#0a74da;">Dr. Akshay</h3>
       <p>Orthopedic Specialist</p>
     </div>
 
-    <div class="doctor-card" style="background:white; border-radius:12px; padding:20px; max-width:250px;">
-      <img src="images/deepak.JPG" alt="Dr. Deepak" style="width:100%; border-radius:12px; margin-bottom:15px;">
+    <div class="doctor-card"
+      style="background:white; border-radius:12px; padding:20px; max-width:250px;">
+      <img src="images/deepak.JPG" alt="Dr. Deepak"
+        style="width:100%; border-radius:12px; margin-bottom:15px;">
       <h3 style="color:#0a74da;">Dr. Deepak Inamdar</h3>
       <p>Orthopedic Surgeon</p>
     </div>
   </div>
 
-  <a href="doctors.html" class="btn-secondary" style="margin-top:30px; display:inline-block; padding:12px 25px;">
+  <a href="doctors.html" class="btn-secondary"
+    style="margin-top:30px; display:inline-block; padding:12px 25px;">
     View All Doctors
   </a>
 </section>
 
-
-
 <!-- Slogan -->
-<section class="slogan" style="background:#f0f6ff; padding:55px 20px; text-align:center;">
+<section class="slogan"
+  style="background:#f0f6ff; padding:55px 20px; text-align:center;">
+  
   <h2 style="font-size:2.2rem; font-weight:700; color:#0a74da;">
     "Your Health, Our Digital Expertise"
   </h2>
+
   <p style="font-size:1.2rem; margin-top:15px; color:#333;">
     We help doctors shine online and make quality healthcare easy to access.
   </p>
 </section>
 
 <!-- Footer -->
-<!-- Footer -->
-  <!-- Footer -->
-<footer style="background:#0a74da; color:white; padding:20px 15px; font-family:'Roboto', sans-serif; text-align:center;">
+<footer
+  style="background:#0a74da; color:white; padding:20px 15px; text-align:center;">
   
-  <!-- Contact Info -->
-  <div style="margin-bottom:15px; font-size:0.95rem; line-height:1.6;">
-    <span><i class="fas fa-envelope"></i> <a href="mailto:contact@carefluencenetwork.com" style="color:white; text-decoration:none;">contact@carefluencenetwork.com</a></span> &nbsp; | &nbsp;
-    <span><i class="fas fa-phone"></i> +91 6364011826</span> &nbsp; | &nbsp;
-    <span><i class="fas fa-map-marker-alt"></i> Bangalore, India</span>
-  </div>
-
-  <!-- Social Media Icons -->
-  <div class="social-icons" style="margin-bottom:12px;">
-    <a href="https://www.instagram.com/carefluence.tv" target="_blank" rel="noopener noreferrer" style="color:#E4405F; font-size:1.6rem; margin:0 10px; transition:0.3s;">
-      <i class="fab fa-instagram"></i>
-    </a>
-    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" style="color:#3b5998; font-size:1.6rem; margin:0 10px; transition:0.3s;">
-      <i class="fab fa-facebook-f"></i>
-    </a>
-    <a href="https://youtube.com/@carefluence-tv?si=1vmdK8V0xtpKnhtZ" target="_blank" rel="noopener noreferrer" style="color:#FF0000; font-size:1.6rem; margin:0 10px; transition:0.3s;">
-      <i class="fab fa-youtube"></i>
-    </a>
-    <a href="mailto:contact@carefluencenetwork.com" style="color:#D44638; font-size:1.6rem; margin:0 10px; transition:0.3s;">
-      <i class="fas fa-envelope"></i>
-    </a>
-  </div>
+  <p style="font-size:0.9rem;">
+    &copy; 2025 CareFluenceNetwork. Made with ❤️ in Bangalore.
+  </p>
+</footer>
 
 <script>
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
+
 hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('show');
   hamburger.classList.toggle('open');
@@ -207,3 +176,4 @@ hamburger.addEventListener('click', () => {
 
 </body>
 </html>
+
