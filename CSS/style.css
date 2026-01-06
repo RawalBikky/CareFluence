@@ -939,5 +939,20 @@ footer a:hover {
     font-size: 1rem;
   }
 }
+.clients-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #0a74da;
+}
+
+.clients-logos img {
+  max-width: 180px;
+  filter: grayscale(100%);
+  transition: 0.3s ease;
+}
+
+.clients-logos img:hover {
+  filter: grayscale(0%);
+}
 
 
