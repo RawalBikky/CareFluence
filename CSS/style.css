@@ -966,12 +966,12 @@ footer a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 80px;
   flex-wrap: wrap;
 }
 
 .trusted-hospitals-logos img {
-  height: 40px;
+  height: 80px;
   width: auto;
 }
 
